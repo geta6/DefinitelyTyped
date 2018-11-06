@@ -1116,7 +1116,7 @@ declare namespace webpack {
     }
 
     abstract class Plugin implements Tapable.Plugin {
-        apply(compiler: Compiler): void;
+        apply(compiler: Compiler | MultiCompiler): void;
     }
 
     abstract class ResolvePlugin implements Tapable.Plugin {
